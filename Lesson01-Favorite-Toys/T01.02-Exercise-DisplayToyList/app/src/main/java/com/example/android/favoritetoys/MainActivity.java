@@ -37,9 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
         mToysListTextView = (TextView) findViewById(R.id.tv_toy_names);
         String toyNameTotal[] = ToyBox.getToyNames();
-//        for(int i=0; i<toyNames.length; i++){
-//            mToysListTextView.append(toyNames[i]);
-//            mToysListTextView.append("\n\n\n");
         for(String toyName : toyNameTotal){
             mToysListTextView.append(toyName + "\n\n\n");
         }
